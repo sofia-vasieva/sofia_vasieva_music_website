@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merch — Sofia Vasieva</title>
+  <meta name="description" content="Official merchandise from Sofia Vasieva.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       Nav order: Home · About · Music · Sheet Music · Merch · Contact
+  ══════════════════════════════════════ -->
+  <nav class="nav scrolled" id="mainNav">
+    <a href="index.html" class="nav-logo">Sofia Vasieva</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="sheet-music.html">Sheet Music</a></li>
+      <li><a href="merch.html" class="active">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PAGE HERO
+       Background: tidal-flats.png (subtle + humble, matches about/sheet music)
+       To change: update the filename in the url() below.
+  ══════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('images/backgrounds/tidal-flats.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1 class="page-title">Merch</h1>
+      <!-- UPDATE: edit this subtitle if you like -->
+      <p class="page-subtitle">Support my music, if you like!</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       MERCH GRID
+
+       HOW TO ADD A PHOTO FOR AN ITEM:
+       1. Save your product photo to images/merch/
+          (suggested names are shown in each placeholder below)
+       2. Find the item's <div class="merch-img-wrap"> block.
+       3. Delete the <div class="merch-placeholder"> inside it.
+       4. Replace it with: <img src="images/merch/filename.jpg" alt="Product name">
+          (square photos work best — same width and height)
+
+       HOW TO ADD THE STORE LINK FOR AN ITEM:
+       Find the <a href="#" ... class="merch-card"> for that item and
+       replace the # with your store link (e.g. from Printful, Redbubble, Shopify, etc.)
+       All links open in a new tab automatically.
+
+       HOW TO UPDATE PRICES:
+       Find <p class="merch-price"> for each item and change the text.
+
+       HOW TO ADD A NEW ITEM:
+       Copy any full <a class="merch-card"> block and paste it into the grid.
+       Update the href, image, name, and price.
+  ══════════════════════════════════════ -->
+  <section class="section">
+    <div class="merch-grid">
+
+      <!-- ══ ITEM 1: SKY T-SHIRT ══ -->
+      <!-- UPDATE: replace # with your store link for this item -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-tshirt.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-tshirt.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky T-shirt</p>
+        <p class="merch-price">£00.00</p> <!-- UPDATE: set price -->
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ══ ITEM 2: SKY (SPECIAL EDITION) T-SHIRT ══ -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-se-tshirt.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-se-tshirt.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky (Special Edition) T-shirt</p>
+        <p class="merch-price">£00.00</p>
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ══ ITEM 3: SKY SOCKS ══ -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-socks.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-socks.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky Socks</p>
+        <p class="merch-price">£00.00</p>
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ══ ITEM 4: SKY MUG ══ -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-mug.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-mug.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky Mug</p>
+        <p class="merch-price">£00.00</p>
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ══ ITEM 5: SKY ALBUM COVER COASTER ══ -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-coaster.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-coaster.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky Album Cover Coaster</p>
+        <p class="merch-price">£00.00</p>
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ══ ITEM 6: SKY HOODIE ══ -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-hoodie.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-hoodie.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky Hoodie</p>
+        <p class="merch-price">£00.00</p>
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ══ ITEM 7: SKY HOODIE (SPECIAL EDITION) ══ -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-hoodie-se.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-hoodie-se.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky Hoodie (Special Edition)</p>
+        <p class="merch-price">£00.00</p>
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ══ ITEM 8: SKY (SPECIAL EDITION) CD ══ -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-se-cd.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-se-cd.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky (Special Edition) CD</p>
+        <p class="merch-price">£00.00</p>
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ══ ITEM 9: SKY (SPECIAL EDITION) VINYL ══ -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="merch-card">
+        <div class="merch-img-wrap">
+          <!-- Save photo as: images/merch/sky-se-vinyl.jpg -->
+          <div class="merch-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/merch/<br>sky-se-vinyl.jpg</code>
+          </div>
+        </div>
+        <p class="merch-name">Sky (Special Edition) Vinyl</p>
+        <p class="merch-price">£00.00</p>
+        <span class="merch-buy">Buy now →</span>
+      </a>
+
+      <!-- ── TO ADD A NEW ITEM: copy any block above (from <a href to </a>)
+           and paste it here. Update the href, image filename, name, and price. ── -->
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       UPDATE: replace YouTube # with your actual channel URL.
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <span class="footer-name">Sofia Vasieva</span>
+    <ul class="footer-links">
+      <li><a href="https://open.spotify.com/artist/4lT0CU5uolFDBK3afVRovx" target="_blank" rel="noopener">Spotify</a></li>
+      <li><a href="https://music.apple.com/gb/album/sky/1651735423" target="_blank" rel="noopener">Apple Music</a></li>
+      <li><a href="https://www.youtube.com/channel/UC-3G4gNWq5SX8hbs0VZsb0Q" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">&copy; <span id="year"></span> Sofia Vasieva. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

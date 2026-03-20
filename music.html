@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music — Sofia Vasieva</title>
+  <meta name="description" content="Music by Sofia Vasieva — albums and singles.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="nav scrolled" id="mainNav">
+    <a href="index.html" class="nav-logo">Sofia Vasieva</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="music.html" class="active">Music</a></li>
+      <li><a href="sheet-music.html">Sheet Music</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PAGE HERO
+       Background: golden-sunset.png
+       To change the photo: update the filename in the url() below.
+  ══════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('images/backgrounds/golden-sunset.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1 class="page-title">Music</h1>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ALBUMS + SINGLES
+
+       HOW TO ADD A NEW ALBUM OR SINGLE:
+       1. Save your cover image to: images/albums/filename.jpg
+          (use lowercase with hyphens, e.g. sky-special-edition.jpg)
+       2. Copy an <div class="album-card"> block and paste it in the grid.
+       3. Change data-album="sky" to a new unique key (e.g. data-album="sky-se").
+       4. Update the image src, name, and year inside the card.
+       5. In js/main.js, add a matching entry to the albums{} object
+          (instructions and examples are inside that file).
+
+       HOW TO ADD YOUR COVER IMAGE FOR AN EXISTING ENTRY:
+       Save the image file to images/albums/, e.g. sky.jpg
+       The <img> tag will pick it up automatically. If the file is missing,
+       a placeholder is shown instead.
+  ══════════════════════════════════════ -->
+  <section class="section">
+
+    <!-- ── ALBUMS ── -->
+    <span class="section-eyebrow">Discography</span>
+    <h2 class="discography-heading">Albums</h2>
+
+    <div class="album-grid">
+
+      <!-- ── ALBUM: SKY (SPECIAL EDITION) ── -->
+      <div class="album-card" data-album="skyse">
+        <div class="album-cover-wrap">
+          <!-- Save cover as: images/albums/sky-special-edition.png -->
+          <img src="images/albums/sky-special-edition.png"
+               alt="Sky (Special Edition) album cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="album-placeholder" style="display:none;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <strong>Sky (Special Edition)</strong>
+            Save cover to<br>
+            <code style="font-size:.62rem;color:var(--text-muted)">images/albums/<br>sky-special-edition.jpg</code>
+          </div>
+          <div class="album-hover-label"><span>View on streaming</span></div>
+        </div>
+        <div class="album-info">
+          <!-- UPDATE: change year when released -->
+          <h3 class="album-name">Sky (Special Edition)</h3>
+          <span class="album-year">31 March 2026</span>
+        </div>
+      </div>
+
+      <!-- ── ALBUM: SKY (ORIGINAL, 2022) ── -->
+      <div class="album-card" data-album="sky">
+        <div class="album-cover-wrap">
+          <!-- Save cover as: images/albums/sky.png -->
+          <img src="images/albums/sky.png"
+               alt="Sky album cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="album-placeholder" style="display:none;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <strong>Sky</strong>
+            Save cover to<br>
+            <code style="font-size:.62rem;color:var(--text-muted)">images/albums/sky.png</code>
+          </div>
+          <div class="album-hover-label"><span>View on streaming</span></div>
+        </div>
+        <div class="album-info">
+          <h3 class="album-name">Sky</h3>
+          <span class="album-year">2022</span>
+        </div>
+      </div>
+
+      <!-- ── TO ADD MORE ALBUMS: copy the block above, give it a new data-album key,
+           update the image src, name, and year, then add an entry in js/main.js ── -->
+
+    </div><!-- end album-grid -->
+
+
+    <!-- ── SINGLES ── -->
+    <h2 class="discography-heading" style="margin-top: 5rem;">Singles</h2>
+
+    <!-- Singles use a slightly more compact grid than albums -->
+    <div class="singles-grid">
+
+      <!-- ── SINGLE: STARLIGHT ── -->
+      <div class="album-card" data-album="starlight">
+        <div class="album-cover-wrap">
+          <!-- Save cover as: images/albums/starlight.png -->
+          <img src="images/albums/starlight.png"
+               alt="Starlight single cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="album-placeholder" style="display:none;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <strong>Starlight</strong>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/albums/<br>starlight.jpg</code>
+          </div>
+          <div class="album-hover-label"><span>Listen</span></div>
+        </div>
+        <div class="album-info">
+          <h3 class="album-name">Starlight</h3>
+          <span class="album-year">2022</span>
+        </div>
+      </div>
+
+      <!-- ── SINGLE: UNDER WATER ── -->
+      <div class="album-card" data-album="underWater">
+        <div class="album-cover-wrap">
+          <!-- Save cover as: images/albums/under-water.png -->
+          <img src="images/albums/under-water.png"
+               alt="Under Water single cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="album-placeholder" style="display:none;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <strong>Under Water</strong>
+            <code style="font-size:.6rem;color:var(--text-muted)">images/albums/<br>under-water.jpg</code>
+          </div>
+          <div class="album-hover-label"><span>Listen</span></div>
+        </div>
+        <div class="album-info">
+          <h3 class="album-name">Under Water</h3>
+          <span class="album-year">2022</span>
+        </div>
+      </div>
+
+      <!-- ── TO ADD MORE SINGLES: copy a block above, give it a new data-album key,
+           update the image src and name, then add an entry in js/main.js ── -->
+
+    </div><!-- end singles-grid -->
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       STREAMING DRAWER
+       This panel slides in from the right when an album or single is clicked.
+       You don't need to edit this — it is populated automatically by js/main.js.
+  ══════════════════════════════════════ -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="albumDrawer" role="dialog" aria-label="Streaming links">
+    <button class="drawer-close" id="drawerClose" aria-label="Close">&times;</button>
+    <div class="drawer-cover" id="drawerCover">
+      <div class="drawer-cover-placeholder">Cover</div>
+    </div>
+    <h2 class="drawer-album-name" id="drawerName"></h2>
+    <p class="drawer-album-year" id="drawerYear"></p>
+    <hr class="drawer-divider">
+    <span class="drawer-label">Listen on</span>
+    <div class="streaming-links" id="drawerLinks"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       UPDATE: replace the YouTube # with your actual channel URL.
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <span class="footer-name">Sofia Vasieva</span>
+    <ul class="footer-links">
+      <li><a href="https://open.spotify.com/artist/4lT0CU5uolFDBK3afVRovx" target="_blank" rel="noopener">Spotify</a></li>
+      <li><a href="https://music.apple.com/gb/album/sky/1651735423" target="_blank" rel="noopener">Apple Music</a></li>
+      <li><a href="https://www.youtube.com/channel/UC-3G4gNWq5SX8hbs0VZsb0Q" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">&copy; <span id="year"></span> Sofia Vasieva. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

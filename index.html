@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofia Vasieva</title>
+  <meta name="description" content="Sofia Vasieva — composer and musician. Official music website.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       To add or rename a page: edit the <li> items below.
+       The class="active" highlights the current page — keep it on "Home" here.
+  ══════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-logo">Sofia Vasieva</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="sheet-music.html">Sheet Music</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO SECTION
+       Background photo: dramatic-clouds.png
+       To swap the background photo, change the filename in the url() below.
+       Available photos in images/backgrounds/:
+         dramatic-clouds.png, golden-sunset.png, tidal-flats.png,
+         moorland.png, ocean-sunset.png, rain-window.png, sunset-wide.png
+  ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('images/backgrounds/dramatic-clouds.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+
+      <!-- ── YOUR NAME ──
+           Font size is deliberately restrained.
+           To make it larger: increase the last number, e.g. change 5.5rem to 7rem.
+           To make it smaller: decrease it, e.g. change 5.5rem to 4rem.
+      ── -->
+      <h1 class="hero-title" style="font-size: clamp(2.4rem, 6vw, 5.5rem);">Sofia Vasieva</h1>
+
+      <!-- ── TAGLINE ──
+           Shown in amber below your name. Edit the text between the tags.
+           This tells visitors it is your music site (vs. a future science site).
+      ── -->
+      <span class="hero-eyebrow" style="margin-top: 1rem; display:block;">official music website</span>
+
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       NEWS / ANNOUNCEMENTS STRIP
+       Intentionally minimal — dates and headlines only.
+
+       HOW TO UPDATE:
+       · Edit the text inside <p class="news-headline"> for each item.
+       · Change the <span class="news-date"> text.
+       · Update href="#" with your real presave / announcement URL.
+       · To ADD a new item: copy a <div class="news-item"> block and paste above the others.
+       · To REMOVE an old item: delete the whole <div class="news-item"> block.
+  ══════════════════════════════════════ -->
+  <div class="news-strip">
+
+    <!-- Most recent item first: -->
+
+    <div class="news-item">
+      <span class="news-date">March 2026</span>
+      <p class="news-headline">
+        <em>Sky (Special Edition)</em> — out 31 March.
+        <!-- UPDATE: replace the # with your actual presave/link URL -->
+        <a href="#" class="news-link">Presave now →</a>
+      </p>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">November 2022</span>
+      <p class="news-headline">
+        Debut album <em>Sky</em> — out now.
+        <a href="https://open.spotify.com/album/0wvh6Ya2eiq0gS8Y3p2ku6"
+           target="_blank" rel="noopener" class="news-link">Listen on Spotify →</a>
+      </p>
+    </div>
+
+    <!-- ── TO ADD MORE NEWS, COPY THIS BLOCK: ──
+    <div class="news-item">
+      <span class="news-date">Month Year</span>
+      <p class="news-headline">
+        Your announcement text here.
+        <a href="YOUR_LINK" target="_blank" rel="noopener" class="news-link">Link text →</a>
+      </p>
+    </div>
+    ── -->
+
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PAGE LINKS — four image panels leading to other sections.
+       To change a background photo, update the url() in each style="..." below.
+  ══════════════════════════════════════ -->
+  <section>
+    <div class="teaser-grid">
+
+      <a href="music.html" class="teaser-card">
+        <div class="teaser-bg" style="background-image: url('images/backgrounds/golden-sunset.png');"></div>
+        <div class="teaser-overlay"></div>
+        <div class="teaser-content">
+          <span class="teaser-label">Listen</span>
+          <span class="teaser-name">Music</span>
+        </div>
+      </a>
+
+      <a href="about.html" class="teaser-card">
+        <div class="teaser-bg" style="background-image: url('images/portrait/me_1.png');"></div>
+        <div class="teaser-overlay"></div>
+        <div class="teaser-content">
+          <span class="teaser-label">About</span>
+          <span class="teaser-name">Sofia</span>
+        </div>
+      </a>
+
+      <a href="sheet-music.html" class="teaser-card">
+        <div class="teaser-bg" style="background-image: url('images/backgrounds/moorland.png');"></div>
+        <div class="teaser-overlay"></div>
+        <div class="teaser-content">
+          <span class="teaser-label">Scores</span>
+          <span class="teaser-name">Sheet Music</span>
+        </div>
+      </a>
+
+      <a href="merch.html" class="teaser-card">
+        <div class="teaser-bg" style="background-image: url('images/backgrounds/tidal-flats.png');"></div>
+        <div class="teaser-overlay"></div>
+        <div class="teaser-content">
+          <span class="teaser-label">Shop</span>
+          <span class="teaser-name">Merch</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOLLOW / SOCIAL MEDIA SECTION
+       This gives visitors a clear place to find and follow you.
+
+       HOW TO UPDATE:
+       · Replace each href="#" with your real social media URL.
+       · To add a platform: copy a <a class="social-link"> and update the href and text.
+       · To remove a platform: delete that <a> tag.
+       · To change the intro line: edit the <p class="contact-intro"> text.
+  ══════════════════════════════════════ -->
+  <section class="section" style="border-top: 1px solid var(--border);">
+    <span class="section-eyebrow">Stay connected</span>
+    <p class="contact-intro" style="margin-bottom:1.8rem;">
+      Follow along for new music and updates.
+    </p>
+    <div class="social-row">
+      <a href="https://open.spotify.com/artist/4lT0CU5uolFDBK3afVRovx"
+         target="_blank" rel="noopener" class="social-link">Spotify</a>
+      <a href="https://music.apple.com/gb/album/sky/1651735423"
+         target="_blank" rel="noopener" class="social-link">Apple Music</a>
+      <a href="https://www.youtube.com/channel/UC-3G4gNWq5SX8hbs0VZsb0Q" target="_blank" rel="noopener" class="social-link">YouTube</a>
+      <a href="https://instagram.com/sofiavasievamusic"
+         target="_blank" rel="noopener" class="social-link">Instagram</a>
+      <!-- UPDATE: replace # with your Facebook page URL once you have it
+           (e.g. https://facebook.com/sofiavasievamusic) -->
+      <a href="#" target="_blank" rel="noopener" class="social-link">Facebook</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       To update links: edit the href="..." values.
+       To add more: copy a <li> item and update the text and link.
+       UPDATE: replace the YouTube # with your actual channel URL.
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <span class="footer-name">Sofia Vasieva</span>
+    <ul class="footer-links">
+      <li><a href="https://open.spotify.com/artist/4lT0CU5uolFDBK3afVRovx" target="_blank" rel="noopener">Spotify</a></li>
+      <li><a href="https://music.apple.com/gb/album/sky/1651735423" target="_blank" rel="noopener">Apple Music</a></li>
+      <!-- UPDATE: replace # with your YouTube channel URL -->
+      <li><a href="https://www.youtube.com/channel/UC-3G4gNWq5SX8hbs0VZsb0Q" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">&copy; <span id="year"></span> Sofia Vasieva. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

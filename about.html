@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Sofia Vasieva</title>
+  <meta name="description" content="About Sofia Vasieva — composer and musician.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       Nav order: Home · About · Music · Sheet Music · Merch · Contact
+  ══════════════════════════════════════ -->
+  <nav class="nav scrolled" id="mainNav">
+    <a href="index.html" class="nav-logo">Sofia Vasieva</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="sheet-music.html">Sheet Music</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PAGE HERO
+       Background: trees_1.png
+       To change: update the filename in the url() below.
+  ══════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('images/backgrounds/trees_1.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1 class="page-title">About</h1>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT CONTENT
+  ══════════════════════════════════════ -->
+  <section class="section">
+    <div class="about-layout">
+
+      <!-- ── LEFT COLUMN: YOUR PORTRAIT ──
+
+           HOW TO ADD YOUR PHOTO:
+           1. Save a photo of yourself to the folder: images/portrait/
+              (suggested filename: sofia.jpg — any name works)
+           2. Delete the <div class="portrait-placeholder"> block below entirely.
+           3. Replace it with this one line (update the filename if different):
+                 <img class="portrait-photo" src="images/portrait/sofia.jpg" alt="Sofia Vasieva">
+
+           The photo looks best in portrait orientation (taller than wide).
+      ── -->
+      <div class="portrait-wrap">
+        <img class="portrait-photo" src="images/portrait/me_2.png" alt="Sofia Vasieva">
+      </div>
+
+      <!-- ── RIGHT COLUMN: NAME + BIO ──
+
+           HOW TO EDIT YOUR BIO:
+           · Replace each paragraph's text between <p> and </p>.
+           · Delete the class="placeholder" part once you've added real text.
+           · Add or remove <p> tags to make more or fewer paragraphs.
+           · The "About tag" line (composer · musician) can be changed too.
+      ── -->
+      <div class="about-text">
+        <h2 class="about-name">Sofia Vasieva</h2>
+
+        <!-- ══════════════════════════════════════
+             OPTIONAL TAGLINE — shown below your name in amber.
+             To add one, uncomment the line below and change the text.
+             Examples: "composer", "pianist", "musician", "composer & physicist"
+             Leave it commented out to show nothing here.
+        ══════════════════════════════════════ -->
+        <!-- <span class="about-tag">your tagline here</span> -->
+
+        <div class="about-bio">
+
+          <!-- ── PASTE YOUR BIO BELOW ──
+               Delete the class="placeholder" from each <p> tag once you have real text.
+               Example of a finished paragraph (no class needed):
+               <p>Sofia Vasieva is a composer whose music draws from the natural world...</p>
+          ── -->
+
+          <p>I'm Sofia Vasieva, a composer from north-west England. At other times, I'm an astrophysics student, and in between those two things, I enjoy long walks in nature. I frequently see parallels between the music in my mind and the various features and landscapes which surround me — and that's how things like rain, sun, clouds and the like become, in turn, a metaphor for the emotions that I aim to convey through my music.</p>
+
+          <p>Over the years, creating music has provided me with a means of expressing my thoughts and emotions. These musical pursuits are paralleled by a passion for physics, and for a number of years I struggled to decide between them. Luckily, I eventually figured out that I don't have to. For me, music and physics are inseparable, intertwined and dependent upon one another. Studying physics provides me with deeper mental content to express in my music, while the music I hear and create is the backdrop upon which I experience all else, including physics.</p>
+
+          <p>My first album, <em>Sky</em>, contains nine solo piano tracks, which I composed between the ages of 13 and 18, and later recorded, produced and mastered by myself. I'm very excited to announce the new Special Edition of <em>Sky</em>, which contains the original nine tracks, remixed and remastered, along with an epilogue of two bonus tracks.</p>
+
+          <p>Finally, I'm so grateful that you have come across my music and my website, and I hope that you stay to listen.</p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       UPDATE: replace YouTube # with your actual channel URL.
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <span class="footer-name">Sofia Vasieva</span>
+    <ul class="footer-links">
+      <li><a href="https://open.spotify.com/artist/4lT0CU5uolFDBK3afVRovx" target="_blank" rel="noopener">Spotify</a></li>
+      <li><a href="https://music.apple.com/gb/album/sky/1651735423" target="_blank" rel="noopener">Apple Music</a></li>
+      <li><a href="https://www.youtube.com/channel/UC-3G4gNWq5SX8hbs0VZsb0Q" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">&copy; <span id="year"></span> Sofia Vasieva. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

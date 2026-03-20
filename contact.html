@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sofia Vasieva</title>
+  <meta name="description" content="Get in touch with Sofia Vasieva.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       Nav order: Home · About · Music · Sheet Music · Merch · Contact
+  ══════════════════════════════════════ -->
+  <nav class="nav scrolled" id="mainNav">
+    <a href="index.html" class="nav-logo">Sofia Vasieva</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="sheet-music.html">Sheet Music</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PAGE HERO
+       Background: sunset-wide.png
+       To change: update the filename in the url() below.
+  ══════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('images/backgrounds/sunset-wide.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1 class="page-title">Contact</h1>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT FORM
+
+       HOW THIS WORKS:
+       The form uses Formspree — a free service that emails you
+       when someone fills it in. Your email address is never shown
+       on the website.
+
+       TO SET IT UP (takes about 5 minutes):
+       1. Go to https://formspree.io and create a free account.
+       2. Click "New Form", give it a name (e.g. "Website Contact").
+       3. Copy the form endpoint URL — it looks like:
+             https://formspree.io/f/abcdefgh
+       4. In this file, find the <form action="..."> tag below
+          and replace the placeholder URL with your Formspree URL.
+       5. That's it — Formspree will email you whenever someone submits.
+
+       Note: The free Formspree plan allows up to 50 submissions/month,
+       which is plenty to start with.
+
+       HOW TO EDIT THE FORM FIELDS:
+       Each field is a <div class="form-group"> block.
+       To add a field: copy one and change the label text and input name="...".
+       To remove a field: delete the whole <div class="form-group"> block.
+  ══════════════════════════════════════ -->
+  <section class="section">
+
+    <!-- UPDATE: replace the action URL with your Formspree endpoint -->
+    <form
+      action="https://formspree.io/f/xdawdoon"
+      method="POST"
+      class="contact-form"
+      id="contactForm"
+    >
+
+      <!-- Name field -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+
+      <!-- Email field — Formspree uses this to reply to the sender -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
+      </div>
+
+      <!-- Message field -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+      </div>
+
+      <!-- Formspree honeypot (spam prevention — leave this hidden) -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="form-submit">Send →</button>
+
+    </form>
+
+    <!-- Thank-you message shown after successful submission -->
+    <div class="form-success" id="formSuccess">
+      Thank you :)
+    </div>
+
+    <!-- ── SOCIAL LINKS ──
+         UPDATE: add your real social URLs here.
+         To add more: copy a <a class="social-link"> and update the href and text.
+         To remove one: delete that <a> tag.
+    ── -->
+    <!-- ── SOCIAL LINKS ──
+         UPDATE: fill in your real URLs below.
+         To add more: copy a <a> line and update the href and label.
+         To remove one: delete that line.
+    ── -->
+    <div class="social-row">
+      <!-- UPDATE: add your Facebook page URL -->
+      <!-- <a href="https://facebook.com/yourpage" target="_blank" rel="noopener" class="social-link">Facebook</a> -->
+      <!-- UPDATE: add your YouTube channel URL -->
+      <!-- <a href="https://youtube.com/@yourchannel" target="_blank" rel="noopener" class="social-link">YouTube</a> -->
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       UPDATE: replace YouTube # with your actual channel URL.
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <span class="footer-name">Sofia Vasieva</span>
+    <ul class="footer-links">
+      <li><a href="https://open.spotify.com/artist/4lT0CU5uolFDBK3afVRovx" target="_blank" rel="noopener">Spotify</a></li>
+      <li><a href="https://music.apple.com/gb/album/sky/1651735423" target="_blank" rel="noopener">Apple Music</a></li>
+      <li><a href="https://www.youtube.com/channel/UC-3G4gNWq5SX8hbs0VZsb0Q" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+    <p class="footer-copy">&copy; <span id="year"></span> Sofia Vasieva. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Show a thank-you message after the form is submitted (Formspree redirects back to the page)
+    const form = document.getElementById('contactForm');
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
