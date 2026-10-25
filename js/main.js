@@ -52,8 +52,21 @@ if (hero) {
    Just leave the value as an empty string: spotify: ''
    That platform's button will simply not appear in the drawer.
 
+   UPCOMING RELEASES:
+   Add a presave: '...' link. The drawer will show a "Presave here" button
+   instead of streaming links. Once released, delete the presave line and
+   fill in the streaming links.
+
    ============================================================ */
 const albums = {
+
+  // ── EP: RETURN OF THE STORM ──
+  returnOfTheStorm: {
+    name: 'Return of the Storm',
+    year: '4 December 2026',
+    cover: 'images/albums/return_of_the_storm_ep_cover.jpg',
+    presave: 'https://distrokid.com/hyperfollow/sofiavasieva/return-of-the-storm?ref=release',
+  },
 
   // ── SKY (SPECIAL EDITION) ──
   skyse: {
@@ -77,6 +90,14 @@ const albums = {
     youtubeMusic: '', // UPDATE: add YouTube Music link if available
     bandcamp:     '',
     soundcloud:   '',
+  },
+
+  // ── SINGLE: JUPITER ──
+  jupiter: {
+    name: 'Jupiter',
+    year: '2 November 2026',
+    cover: 'images/albums/jupiter_cover.jpg',
+    presave: 'https://distrokid.com/hyperfollow/sofiavasieva/jupiter?ref=release',
   },
 
   // ── SINGLE: STARLIGHT ──
@@ -141,9 +162,14 @@ function openDrawer(albumKey) {
   if (nameEl) nameEl.textContent = album.name;
   if (yearEl) yearEl.textContent = album.year;
 
-  // Build streaming links
+  // Build streaming links (or a presave link for upcoming releases)
+  const labelEl = document.getElementById('drawerLabel');
+  if (labelEl) labelEl.style.display = album.presave ? 'none' : '';
   const linksEl = document.getElementById('drawerLinks');
-  if (linksEl) {
+  if (linksEl && album.presave) {
+    linksEl.innerHTML =
+      `<a href="${album.presave}" target="_blank" rel="noopener noreferrer" class="streaming-link">Presave here</a>`;
+  } else if (linksEl) {
     const links = [];
 
     if (album.spotify) links.push({

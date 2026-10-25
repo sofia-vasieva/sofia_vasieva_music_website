@@ -61,9 +61,30 @@
 
     <!-- ── ALBUMS ── -->
     <span class="section-eyebrow">Discography</span>
-    <h2 class="discography-heading">Albums</h2>
+    <h2 class="discography-heading">Albums and EPs</h2>
 
     <div class="album-grid">
+
+      <!-- ── EP: RETURN OF THE STORM (upcoming — presave) ── -->
+      <div class="album-card" data-album="returnOfTheStorm">
+        <div class="album-cover-wrap">
+          <img src="images/albums/return_of_the_storm_ep_cover.jpg"
+               alt="Return of the Storm EP cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="album-placeholder" style="display:none;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <strong>Return of the Storm</strong>
+          </div>
+          <div class="album-hover-label"><span>Presave here</span></div>
+        </div>
+        <div class="album-info">
+          <h3 class="album-name">Return of the Storm</h3>
+          <span class="album-year">4 December 2026</span>
+        </div>
+      </div>
 
       <!-- ── ALBUM: SKY (SPECIAL EDITION) ── -->
       <div class="album-card" data-album="skyse">
@@ -125,6 +146,27 @@
 
     <!-- Singles use a slightly more compact grid than albums -->
     <div class="singles-grid">
+
+      <!-- ── SINGLE: JUPITER (upcoming — presave) ── -->
+      <div class="album-card" data-album="jupiter">
+        <div class="album-cover-wrap">
+          <img src="images/albums/jupiter_cover.jpg"
+               alt="Jupiter single cover"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="album-placeholder" style="display:none;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <strong>Jupiter</strong>
+          </div>
+          <div class="album-hover-label"><span>Presave here</span></div>
+        </div>
+        <div class="album-info">
+          <h3 class="album-name">Jupiter</h3>
+          <span class="album-year">2 November 2026</span>
+        </div>
+      </div>
 
       <!-- ── SINGLE: STARLIGHT ── -->
       <div class="album-card" data-album="starlight">
@@ -193,7 +235,7 @@
     <h2 class="drawer-album-name" id="drawerName"></h2>
     <p class="drawer-album-year" id="drawerYear"></p>
     <hr class="drawer-divider">
-    <span class="drawer-label">Listen on</span>
+    <span class="drawer-label" id="drawerLabel">Listen on</span>
     <div class="streaming-links" id="drawerLinks"></div>
   </div>
 
