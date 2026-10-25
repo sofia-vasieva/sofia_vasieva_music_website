@@ -60,8 +60,8 @@ const albums = {
     name: 'Sky (Special Edition)',
     year: '31 March 2026',
     cover: 'images/albums/sky-special-edition.png',
-    spotify:      '', // UPDATE: add Spotify album link when live
-    appleMusic:   '', // UPDATE: add Apple Music link when live
+    spotify:      'https://open.spotify.com/album/6oXIBRTokiSPvqK4wkxHOU?si=sgKaD-jkQ6ux1RB3viKjCA',
+    appleMusic:   'https://music.apple.com/gb/album/sky-special-edition/1886853205',
     youtubeMusic: '', // UPDATE: add YouTube Music link when live
     bandcamp:     '', // UPDATE: add Bandcamp link if applicable
     soundcloud:   '',
