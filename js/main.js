@@ -65,7 +65,7 @@ const albums = {
     name: 'Return of the Storm',
     year: '4 December 2026',
     cover: 'images/albums/return_of_the_storm_ep_cover.jpg',
-    presave: 'https://distrokid.com/hyperfollow/sofiavasieva/return-of-the-storm?ref=release',
+    presave: 'https://distrokid.com/hyperfollow/sofiavasieva/return-of-the-storm-2',
   },
 
   // ── SKY (SPECIAL EDITION) ──
