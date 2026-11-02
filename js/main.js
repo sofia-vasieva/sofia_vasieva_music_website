@@ -97,7 +97,12 @@ const albums = {
     name: 'Jupiter',
     year: '2 November 2026',
     cover: 'images/albums/jupiter_cover.jpg',
-    presave: 'https://distrokid.com/hyperfollow/sofiavasieva/jupiter?ref=release',
+    spotify:      'https://open.spotify.com/track/37gRFGBHgxUQF6WIa2zLuK?si=c90bcd8d85e04064',
+    appleMusic:   'https://music.apple.com/gb/song/jupiter/6816004919',
+    amazonMusic:  'https://music.amazon.com/tracks/B0HKY8HLJQ',
+    youtubeMusic: '', // UPDATE: add YouTube Music link when live
+    bandcamp:     '',
+    soundcloud:   '',
   },
 
   // ── SINGLE: STARLIGHT ──
@@ -131,6 +136,7 @@ const albums = {
   //   cover: 'images/albums/your-cover.jpg',
   //   spotify:      'https://open.spotify.com/album/...',
   //   appleMusic:   'https://music.apple.com/...',
+  //   amazonMusic:  'https://music.amazon.com/...',
   //   youtubeMusic: '',
   //   bandcamp:     '',
   //   soundcloud:   '',
@@ -182,6 +188,12 @@ function openDrawer(albumKey) {
       label: 'Apple Music',
       url: album.appleMusic,
       icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208A6.152 6.152 0 000 5.494v13.01c.01.28.02.56.04.84.07.85.29 1.67.7 2.43.7 1.3 1.76 2.15 3.19 2.59.56.17 1.14.26 1.73.28.29.01.58.03.87.03h13c.25 0 .5-.01.75-.03a7.3 7.3 0 001.57-.29 4.9 4.9 0 002.5-1.78c.58-.8.93-1.7 1.07-2.68.05-.32.07-.64.09-.96V6.62c-.01-.17-.01-.33-.02-.5zm-6.427 3.78v5.14c0 .39-.09.76-.28 1.09-.27.47-.67.79-1.19.92-.27.07-.55.1-.83.09-.83-.03-1.52-.65-1.64-1.47-.12-.82.38-1.62 1.18-1.89.31-.1.64-.13.96-.07.21.04.41.09.62.14V7.02c0-.08.01-.16.02-.24.04-.33.24-.52.57-.54.23-.01.46.01.69.04l3.39.54c.33.05.49.22.5.55.01.25 0 .5 0 .75v.55c0 .39-.23.61-.62.57-.98-.12-1.96-.25-2.94-.37-.15-.02-.21.03-.22.18z"/></svg>`
+    });
+
+    if (album.amazonMusic) links.push({
+      label: 'Amazon Music',
+      url: album.amazonMusic,
+      icon: `<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6.4" y="8" width="2.1" height="6" rx="1.05"/><rect x="10.95" y="4.6" width="2.1" height="9.4" rx="1.05"/><rect x="15.5" y="9.2" width="2.1" height="4.8" rx="1.05"/><path d="M3 17.6c2.8 2.3 5.9 3.4 9 3.4s6.2-1.1 9-3.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>`
     });
 
     if (album.youtubeMusic) links.push({
